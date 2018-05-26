@@ -31,7 +31,10 @@
           <li v-for="detail in details">{{ detail }}</li>
         </ul>
 
-        <div class="variants" v-for="variant in variants" :key="variant.variantId">{{variant.variantColor }}</div>
+        <!-- <p class="colors">Colors:</p> -->
+        <div class="variants" v-for="variant in variants" :key="variant.variantId">
+          <p v-on:mouseover="updateProduct(variant.variantImage)">{{variant.variantColor }}</p>
+        </div>
 
         <p class="sizes">Sizes:</p>
         <ul>

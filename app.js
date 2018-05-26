@@ -10,17 +10,24 @@ var app = new Vue({
       'https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=Nike+Epic+React+Flyknit&rh=i%3Aaps%2Ck%3ANike+Epic+React+Flyknit',
     onSale: true,
     inStock: true,
-    details: ['Flexible Knit Encloure', 'Sole Cusioned', 'Style: AQ0067-300'],
+    details: ['Flexible Knit', 'Sole Cusioned', 'Lightweight'],
     variants: [
       {
         variantId: 2234,
-        variantColor: 'green'
+        variantColor: 'Blue',
+        variantImage: './img/blue.jpg'
       },
       {
         variantId: 2235,
-        variantColor: 'blue'
+        variantColor: 'Pink',
+        variantImage: './img/pink.jpg'        
       }
     ],
     sizes: ['S', 'M', 'L', 'XL', 'XXL', 'XXXL']
+  },
+  methods: {
+    updateProduct(variantImg) {
+      this.image = variantImg
+    }
   }
 });
