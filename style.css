@@ -5,7 +5,7 @@ body {
 }
 
 .nav-bar {
-  background: linear-gradient(-90deg, #291759, #181941);
+  background: linear-gradient(-90deg, #92afd3, #aac9f9);
   height: 60px;
   margin-bottom: 15px;
   color: #d8d8d8;
@@ -94,5 +94,5 @@ textarea {
 }
 
 .sizes {
-  display: inline;
+  font-weight: lighter;
 }

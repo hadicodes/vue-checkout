@@ -21,6 +21,6 @@ var app = new Vue({
         variantColor: 'blue'
       }
     ],
-    sizes: [7, 8, 10, 10.5, 11, 11.5, 12]
+    sizes: ['S', 'M', 'L', 'XL', 'XXL', 'XXXL']
   }
 });
