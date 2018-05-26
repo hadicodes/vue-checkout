@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div class="nav-bar">Nike</div>
   <div id="app">
 
     <div class="product">
@@ -19,7 +20,22 @@
       </div>
 
       <div class="product-info">
+        <p class="category">Athlete's {{ category }} Shoe</p>
         <h1>{{ product }}</h1>
+        <a :href="link" target="_blank">See more here</a>
+        <p v-if="inStock">In Stock</p>
+        <p v-else>Out of Stock</p>
+        <span v-if="onSale">On Sale!</span>
+
+        <ul>
+          <li v-for="detail in details">{{ detail }}</li>
+        </ul>
+
+        <div class="variants" v-for="variant in variants" :key="variant.variantId">{{variant.variantColor }}</div>
+        <ul>Sizes:</p>
+          <li class="sizes" v-for="size in sizes" :key="size">{{ size }}</li>
+        </ul>
+
       </div>
 
     </div>
