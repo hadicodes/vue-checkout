@@ -23,11 +23,19 @@ var app = new Vue({
         variantImage: './img/pink.jpg'        
       }
     ],
-    sizes: ['S', 'M', 'L', 'XL', 'XXL', 'XXXL']
+    sizes: ['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
+    cart: 0
   },
   methods: {
     updateProduct(variantImg) {
       this.image = variantImg
+    },
+    addToCart() {
+      this.cart += 1
+    },
+    removeFromCart() {
+      this.cart -= 1
     }
+
   }
 });
