@@ -36,31 +36,35 @@
         </ul>
 
         <!-- <p class="colors">Colors:</p> -->
-        <div class="variants" v-for="variant in variants" :key="variant.variantId">
-          <p v-on:mouseover="updateProduct(variant.variantImage)">{{variant.variantColor }}</p>
-        </div>
-
-        <p class="sizes">Sizes:</p>
-        <ul>
-          </p>
-          <li v-for="size in sizes" :key="size">{{ size }}</li>
-        </ul>
-
-        <button class="addtocart" v-on:click="addToCart">Add to cart</button>
-        <button class="removefromcart" @click="removeFromCart">Remove from cart</button>
-
-        <div class="cart">
-          <p>Cart ( {{ cart }} )</p>
-        </div>
-
-
+        <div class="variants color-box"
+        v-for="variant in variants" 
+        :key="variant.variantId"
+        :style="{ backgroundColor: variant.variantColor }"
+        @mouseover="updateProduct(variant.variantImage)" 
+        >
       </div>
 
-    </div>
-  </div>
+          <p class="sizes">Sizes:</p>
+          <ul>
+            </p>
+            <li v-for="size in sizes" :key="size">{{ size }}</li>
+          </ul>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-  <script src="app.js"></script>
+          <button class="addtocart" v-on:click="addToCart">Add to cart</button>
+          <button class="removefromcart" @click="removeFromCart">Remove from cart</button>
+
+          <div class="cart">
+            <p>Cart ( {{ cart }} )</p>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="app.js"></script>
 
 </body>
 

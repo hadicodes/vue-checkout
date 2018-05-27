@@ -14,7 +14,7 @@ var app = new Vue({
     variants: [
       {
         variantId: 2234,
-        variantColor: 'Blue',
+        variantColor: 'DeepSkyBlue',
         variantImage: './img/blue.jpg'
       },
       {
