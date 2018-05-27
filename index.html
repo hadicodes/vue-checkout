@@ -10,7 +10,11 @@
 </head>
 
 <body>
-  <div class="nav-bar">Nike</div>
+  <div class="nav-bar">
+    <ul class="logo">
+      <li>Nike</li>
+    </ul>
+  </div>
   <div id="app">
 
     <div class="product">
@@ -42,8 +46,8 @@
           <li v-for="size in sizes" :key="size">{{ size }}</li>
         </ul>
 
-        <button v-on:click="addToCart">Add to cart</button>
-        <button @click="removeFromCart">Remove from cart</button>
+        <button class="addtocart" v-on:click="addToCart">Add to cart</button>
+        <button class="removefromcart" @click="removeFromCart">Remove from cart</button>
 
         <div class="cart">
           <p>Cart ( {{ cart }} )</p>

@@ -1,14 +1,32 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0; */
+  /*  */
+}
+
 body {
   font-family: tahoma;
   color: #282828;
   margin: 0px;
 }
 
-.nav-bar {
-  background: linear-gradient(-90deg, #92afd3, #aac9f9);
+div.nav-bar {
+  background: linear-gradient(-90deg, #f5f5f5, #f5f5f5);
   height: 60px;
   margin-bottom: 15px;
-  color: #d8d8d8;
+}
+
+.logo {
+  display: flex;
+  margin-top: 0;
+}
+
+.logo > li {
+  list-style-type: none;
+  margin-top: 15px;
+  color: #555353;
+  font-weight: lighter;
+  font-size: 1.6em;
 }
 
 .product {
@@ -100,3 +118,7 @@ textarea {
 .colors {
   margin-bottom: -1px;
 } */
+
+.removefromcart {
+  margin-bottom: 10px;
+}
